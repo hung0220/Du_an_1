@@ -8,4 +8,12 @@
 
 hung  hau 123 nmdfbdfn fghfghfghdfjkojkj
   huaha
+
+  <TextView
+      android:id="@+id/textView"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="cc"
+      tools:layout_editor_absoluteX="186dp"
+      tools:layout_editor_absoluteY="266dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
