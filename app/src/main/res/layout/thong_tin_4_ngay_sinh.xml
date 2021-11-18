@@ -5,11 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".thongTin_4_ngaySinh">
+
     <ImageView
         android:id="@+id/imgAfter4"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/outline_left_icon"
+        app:layout_constraintBottom_toTopOf="@+id/lnTT4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".050"
         app:layout_constraintHorizontal_bias="0.046"
@@ -18,14 +20,49 @@
         app:layout_constraintVertical_bias="0.047"
         app:layout_constraintWidth_percent=".10" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="Ngày sinh của bạn"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/lnTT4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent=".050"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgAfter4"
+        app:layout_constraintTop_toBottomOf="@+id/imgAfter4"
+        app:layout_constraintVertical_bias="0.48"
+        app:layout_constraintWidth_percent=".90" />
+
+    <LinearLayout
+        android:id="@+id/lnTT4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="dd/mm/yyyy" />
+    </LinearLayout>
+
     <Button
         android:id="@+id/btnTT4"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Tiếp tục"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/lnTT4"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lnTT4"
+        app:layout_constraintTop_toBottomOf="@+id/lnTT4"
+        app:layout_constraintVertical_bias="0.175" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -10,6 +10,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/outline_left_icon"
+        app:layout_constraintBottom_toTopOf="@+id/lnTT7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent=".050"
         app:layout_constraintHorizontal_bias="0.046"
@@ -18,14 +19,44 @@
         app:layout_constraintVertical_bias="0.047"
         app:layout_constraintWidth_percent=".10" />
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintWidth_percent=".90"
+        android:text="Thêm ảnh"
+        android:textSize="30dp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toTopOf="@+id/lnTT7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/imgAfter7"
+        app:layout_constraintTop_toBottomOf="@+id/imgAfter7"
+        app:layout_constraintVertical_bias="0.3" />
+
+    <LinearLayout
+        android:id="@+id/lnTT7"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3">
+
+    </LinearLayout>
     <Button
         android:id="@+id/btnTT7"
-        android:layout_margin="10dp"
-        android:padding="10dp"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:fontFamily="sans-serif-medium"
+        android:padding="10dp"
+        android:text="Xong"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="@+id/lnTT7"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/lnTT7"
+        app:layout_constraintTop_toBottomOf="@+id/lnTT7"
+        app:layout_constraintVertical_bias="0.175" />
 </androidx.constraintlayout.widget.ConstraintLayout>
