@@ -24,17 +24,17 @@
         android:id="@+id/textView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintHeight_percent=".05"
-        app:layout_constraintWidth_percent=".90"
-        android:text="Email của bạn"
-        android:textSize="30dp"
         android:fontFamily="sans-serif-medium"
+        android:text="Email hoặc SĐT"
+        android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/lnTT1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHeight_percent=".05"
+        app:layout_constraintHorizontal_bias="0.125"
         app:layout_constraintStart_toStartOf="@+id/imgAfter1"
         app:layout_constraintTop_toBottomOf="@+id/imgAfter1"
-        app:layout_constraintVertical_bias="0.48" />
+        app:layout_constraintVertical_bias="0.477"
+        app:layout_constraintWidth_percent=".90" />
 
     <LinearLayout
         android:id="@+id/lnTT1"
@@ -51,7 +51,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
+            android:hint="Email hoặc số điện thoại"
             app:counterEnabled="true"
             app:counterMaxLength="99"
             app:endIconMode="clear_text"
@@ -59,7 +59,7 @@
             app:helperTextTextColor="@color/red">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtEmail"
+                android:id="@+id/edtEmailHoacSDT"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

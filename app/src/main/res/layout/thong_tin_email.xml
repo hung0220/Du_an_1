@@ -25,7 +25,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:fontFamily="sans-serif-medium"
-        android:text="Số Điện Thoại của bạn"
+        android:text="Mật Khẩu Gmail"
         android:textSize="30dp"
         app:layout_constraintBottom_toTopOf="@+id/lnTT2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +52,7 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Số điện thoại"
+            android:hint="Gmail"
             app:counterEnabled="true"
             app:counterMaxLength="10"
             app:endIconMode="clear_text"
@@ -60,7 +60,7 @@
             app:helperTextTextColor="@color/red">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtSdt"
+                android:id="@+id/edtGmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -84,7 +84,7 @@
             app:helperTextTextColor="@color/red">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtMatKhauSDT"
+                android:id="@+id/edtMatKhauGmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -93,49 +93,7 @@
                 android:textSize="20dp" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/maotp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:hint="Nhập mã OTP"
-            app:counterEnabled="true"
-            app:counterMaxLength="6"
-            app:endIconMode="password_toggle"
-            app:helperText="Required*"
-            app:helperTextTextColor="@color/red">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtOTP"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textPassword"
-                android:maxLength="8"
-                android:textSize="20dp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="7dp"
-            android:orientation="horizontal">
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Không nhận được OTP ?"
-                android:textSize="18dp" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=" Gửi lại ngay"
-                android:textColor="#ff0000"
-                android:textSize="18dp"
-                android:textStyle="italic" />
-        </LinearLayout>
     </LinearLayout>
 
 
