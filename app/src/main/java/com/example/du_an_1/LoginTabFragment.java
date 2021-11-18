@@ -10,8 +10,11 @@ import android.widget.EditText;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
+import com.google.android.material.textfield.TextInputEditText;
+import com.google.android.material.textfield.TextInputLayout;
+
 public class LoginTabFragment extends Fragment {
-    EditText edtLogin,edtPass;
+    TextInputLayout edtLogin,edtPass;
     Button btnLogin;
     float v = 0;
 
