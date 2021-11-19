@@ -9,10 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Du_an_1">
-        <activity android:name=".thongtin_sothich"></activity>
+        <activity android:name=".thongtin_email"></activity>
+        <activity android:name=".thongtin_sothich" />
         <activity
             android:name=".MainActivity_Page"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity android:name=".Dieu_Khoan" />
         <activity
             android:name=".MainActivity"
