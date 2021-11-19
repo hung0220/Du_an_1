@@ -24,9 +24,7 @@
             android:exported="true" />
         <activity android:name=".Dieu_Khoan" />
         <activity
-            android:name=".MainActivity"
-            android:exported="true">
-
+            android:name=".MainActivity">
         </activity>
     </application>
 

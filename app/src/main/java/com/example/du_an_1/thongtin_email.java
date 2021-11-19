@@ -25,12 +25,12 @@ public class thongtin_email extends AppCompatActivity {
                 Intent intent = new Intent(thongtin_email.this, thongtin_sothich.class);
                 Toast.makeText(thongtin_email.this, "chuyển thành công", Toast.LENGTH_SHORT).show();
                 startActivity(intent);
-                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+                overridePendingTransition(R.anim.slide_tt_right, R.anim.slide_tt_left);
             }
         });
 
 //        Trở về
-        troVe1 = findViewById(R.id.imgAfter1);
+        troVe1 = findViewById(R.id.back_email);
         troVe1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
