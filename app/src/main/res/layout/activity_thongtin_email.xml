@@ -10,7 +10,7 @@
             android:id="@+id/imgAfter1"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:src="@drawable/close"
+            android:src="@drawable/ic_baseline_arrow_back_24"
             app:layout_constraintBottom_toTopOf="@+id/lnTT1"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHeight_percent=".050"
@@ -56,7 +56,7 @@
                 app:counterMaxLength="99"
                 app:endIconMode="clear_text"
                 app:helperText="Required*"
-                app:helperTextTextColor="@color/red">
+                app:helperTextTextColor="@color/black">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edtEmailHoacSDT"
