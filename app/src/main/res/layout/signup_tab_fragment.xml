@@ -4,25 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-<!--    <EditText-->
-<!--        android:id="@+id/edtLoginNew"-->
-<!--        android:layout_width="0dp"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintWidth_percent=".8"-->
-<!--        app:layout_constraintVertical_bias=".3"-->
-<!--        app:layout_constraintHorizontal_bias=".5"-->
-<!--        android:hint="Email or SDT"-->
-<!--        android:paddingLeft="20dp"-->
-<!--        android:paddingTop="10dp"-->
-<!--        android:paddingBottom="10dp"-->
-<!--        android:inputType="text"-->
-<!--        android:background="@drawable/boder_edt"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        />-->
-
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/edtLogin"
         android:layout_width="0dp"
