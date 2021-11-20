@@ -7,7 +7,7 @@
     tools:context=".thongtin_gioitinh">
     
     <ImageView
-        android:id="@+id/back_email"
+        android:id="@+id/back_gioitinh"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintVertical_bias=".03"
@@ -81,7 +81,7 @@
         app:layout_constraintWidth_percent=".7" />
 
     <Button
-        android:id="@+id/btnTT5"
+        android:id="@+id/btnTT_gioitinh"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/boder_button"

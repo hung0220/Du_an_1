@@ -5,36 +5,38 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 
 public class thongtin_Name extends AppCompatActivity {
-    Button tiepTuc3;
-    ImageView troVe3;
+    Button tieptuc_name;
+    ImageView trove_name;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_thongtin_name);
-//        //         tiếp tục
-//        tiepTuc3 = findViewById(R.id.btnTT3);
-//        tiepTuc3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent intent = new Intent(thongTin_3_name.this, thongTin_4_ngaySinh.class);
-////                startActivity(intent);
-////                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-//            }
-//        });
-//
-////        Trờ về
-//        troVe3 = findViewById(R.id.imgAfter3);
-//        troVe3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-////                Intent intent = new Intent(thongTin_3_name.this, thongTin_2_SDT_OTP.class);
-////                startActivity(intent);
-////                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
-//            }
-//        });
+        //         tiếp tục
+        tieptuc_name = findViewById(R.id.btnTT_ten);
+        tieptuc_name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thongtin_Name.this, thongtin_ngaysinh.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+        });
+
+//        Trờ về
+        trove_name = findViewById(R.id.back_ten);
+        trove_name.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thongtin_Name.this, thongtin_sdt.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+            }
+        });
     }
 }

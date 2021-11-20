@@ -4,25 +4,53 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import java.util.Calendar;
 
 public class thongtin_ngaysinh extends AppCompatActivity {
     private DatePickerDialog datePickerDialog;
     private Button dateButton;
+    Button tieptuc_Date;
+    ImageView trove_Date;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_thongtin_ngaysinh);
         initDatePicker();
         dateButton = findViewById(R.id.datePickerButton);
         dateButton.setText(getTodaysDate());
+        
+        //         tiếp tục
+        tieptuc_Date = findViewById(R.id.btnTT_ngaysinh);
+        tieptuc_Date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thongtin_ngaysinh.this, thongtin_gioitinh.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
+            }
+        });
+
+//        Trờ về
+        trove_Date = findViewById(R.id.back_ngaysinh);
+        trove_Date.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(thongtin_ngaysinh.this, thongtin_Name.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
+            }
+        });
     }
 
     private String getTodaysDate()

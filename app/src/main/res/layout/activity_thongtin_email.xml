@@ -56,7 +56,7 @@
             >
 
             <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtEmailHoacSDT"
+                android:id="@+id/edtEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
@@ -66,7 +66,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/btnTT1"
+        android:id="@+id/btnTT_email"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-medium"

@@ -7,7 +7,7 @@
     tools:context=".thongtin_sdt">
 
     <ImageView
-        android:id="@+id/back_email"
+        android:id="@+id/back_sdt"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintVertical_bias=".03"
@@ -112,7 +112,7 @@
 
 
     <Button
-        android:id="@+id/btnTT2"
+        android:id="@+id/btnTT_sdt"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/boder_button"

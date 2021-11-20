@@ -7,6 +7,7 @@
     tools:context=".thongtin_sothich">
 
     <ImageView
+        android:id="@+id/back_sothich"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintVertical_bias=".03"
@@ -226,7 +227,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <Button
-        android:id="@+id/btn_login"
+        android:id="@+id/btnTT_sothich"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@drawable/boder_button"
