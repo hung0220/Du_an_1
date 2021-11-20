@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".thongtin_email">
-
+    tools:context=".thongtin_mota">
     <ImageView
         android:id="@+id/back_email"
         android:layout_width="0dp"
@@ -19,67 +18,68 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Thông tin Email"
+        android:text="Mô tả"
+        android:gravity="left"
         android:textColor="@color/black"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".3"
+        app:layout_constraintHorizontal_bias=".35"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".13" />
 
-    <LinearLayout
-        android:id="@+id/lnTT1"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/name"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        app:counterEnabled="true"
+        app:counterMaxLength="99"
+        app:layout_constraintVertical_bias=".1"
+        app:layout_constraintWidth_percent=".8"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias=".5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.1"
-        app:layout_constraintWidth_percent=".8">
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="clear_text">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:lines="8"
+        android:minLines="10"
+        android:gravity="top|left"
+        android:maxLines="10"
+        android:padding="20dp"
+        android:scrollbars="vertical"
+        android:inputType="textMultiLine"
+ />
+    </com.google.android.material.textfield.TextInputLayout>
 
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/email"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Email "
-            app:endIconMode="clear_text"
-            >
-
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/edtEmailHoacSDT"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10"
-                android:inputType="textEmailAddress"
-                android:maxLength="100" />
-        </com.google.android.material.textfield.TextInputLayout>
-    </LinearLayout>
 
     <Button
-        android:id="@+id/btnTT1"
+        android:id="@+id/btnTT3"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:background="@drawable/boder_button"
         android:fontFamily="sans-serif-medium"
-        android:textSize="16sp"
-        android:textStyle="bold"
         android:padding="10dp"
         android:text="Tiếp tục"
-        app:layout_constraintVertical_bias=".9"
-        app:layout_constraintWidth_percent=".8"
         android:textColor="@color/white"
-        android:background="@drawable/boder_button"
+        android:textSize="16sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/lnTT1"
-        app:layout_constraintStart_toStartOf="@+id/lnTT1"
-        app:layout_constraintTop_toBottomOf="@+id/lnTT1" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias=".93"
+        app:layout_constraintWidth_percent=".8" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

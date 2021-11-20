@@ -9,22 +9,47 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Du_an_1">
-        <activity android:name=".thongtin_email"
+        <activity android:name=".thongtin_mota"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"
+            >
+
+        </activity>
+        <activity android:name=".thongtin_addArt"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".thongtin_ngaysinh"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name=".thongtin_gioitinh"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".thongtin_Name"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".thongtin_sdt"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".thongtin_email"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
 
         </activity>
-        <activity android:name=".thongtin_sothich" />
+        <activity android:name=".thongtin_sothich"
+            android:windowSoftInputMode="adjustPan"/>
         <activity
             android:name=".MainActivity_Page"
-            android:exported="true" />
-        <activity android:name=".Dieu_Khoan" />
-        <activity
-            android:name=".MainActivity">
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Dieu_Khoan"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+
         </activity>
     </application>
 

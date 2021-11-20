@@ -58,12 +58,10 @@
         app:layout_constraintTop_toBottomOf="@+id/hang2"
         app:layout_constraintVertical_bias="0.05">
 
-        <com.airbnb.lottie.LottieAnimationView
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@drawable/fb" />
+            android:src="@drawable/dau_tich" />
 
         <TextView
             android:layout_width="match_parent"
@@ -102,12 +100,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tvHinh1"
         app:layout_constraintVertical_bias="0.05">
 
-        <com.airbnb.lottie.LottieAnimationView
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@drawable/fb" />
+            android:src="@drawable/dau_tich" />
 
         <TextView
             android:layout_width="match_parent"
@@ -146,12 +142,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tvHinh2"
         app:layout_constraintVertical_bias="0.05">
 
-        <com.airbnb.lottie.LottieAnimationView
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@drawable/fb" />
+            android:src="@drawable/dau_tich" />
 
         <TextView
             android:layout_width="match_parent"
@@ -190,12 +184,10 @@
         app:layout_constraintTop_toBottomOf="@+id/tvHinh3"
         app:layout_constraintVertical_bias="0.05">
 
-        <com.airbnb.lottie.LottieAnimationView
+        <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
-            app:lottie_autoPlay="true"
-            app:lottie_loop="true"
-            app:lottie_rawRes="@drawable/fb" />
+            android:src="@drawable/dau_tich" />
 
         <TextView
             android:layout_width="match_parent"
