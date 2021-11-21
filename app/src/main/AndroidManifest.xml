@@ -52,6 +52,19 @@
             android:windowSoftInputMode="adjustPan">
 
         </activity>
+        <activity android:name=".thongtin_sothich"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity
+            android:name=".MainActivity_Page"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".Dieu_Khoan"
+            android:windowSoftInputMode="adjustPan"/>
+        <activity android:name=".MainActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustPan">
+
+        </activity>
     </application>
 
 </manifest>
