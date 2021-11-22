@@ -10,7 +10,7 @@
         android:layout_width="0dp"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
         android:layout_height="wrap_content"
-        android:hint="Email or SDT "
+        android:hint="Email or SDT 1 "
         app:endIconMode="clear_text"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +22,7 @@
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edtEmail"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="39dp"
             android:ems="10"
             android:inputType="textPersonName"
             android:maxLength="100" />
